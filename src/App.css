@@ -1,0 +1,48 @@
+#markdown-container {
+  height: calc(99vh - 2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  padding: 1rem;
+}
+
+#markdown-container > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+
+#markdown-container #text {
+  resize: none;
+  padding: 0.5rem;
+}
+
+#markdown-container #preview {
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+#buttonToggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 3;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  color: white;
+  background-color: #714baf;
+}
+
+#buttonToggle:hover {
+  background-color: #8f6bc9;
+}
+/*# sourceMappingURL=App.css.map */
